@@ -14,6 +14,9 @@
 		B6CB23C71B3DD99500EF825E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6CB23C61B3DD99500EF825E /* Images.xcassets */; };
 		B6CB23CA1B3DD99500EF825E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CB23C81B3DD99500EF825E /* LaunchScreen.xib */; };
 		B6CB23D61B3DD99500EF825E /* Cover_Flow_LayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CB23D51B3DD99500EF825E /* Cover_Flow_LayoutTests.m */; };
+		B6CB23E41B3DDD8000EF825E /* CoverFlowLayOut.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CB23E31B3DDD8000EF825E /* CoverFlowLayOut.m */; };
+		B6D5E9AB1B41BC81004576E9 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5E9AA1B41BC81004576E9 /* CustomCell.m */; };
+		B6D5E9AE1B41C6D2004576E9 /* ImageFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5E9AD1B41C6D2004576E9 /* ImageFlow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		B6CB23CF1B3DD99500EF825E /* Cover-Flow-LayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cover-Flow-LayoutTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CB23D41B3DD99500EF825E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6CB23D51B3DD99500EF825E /* Cover_Flow_LayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cover_Flow_LayoutTests.m; sourceTree = "<group>"; };
+		B6CB23E21B3DDD8000EF825E /* CoverFlowLayOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowLayOut.h; sourceTree = "<group>"; };
+		B6CB23E31B3DDD8000EF825E /* CoverFlowLayOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowLayOut.m; sourceTree = "<group>"; };
+		B6D5E9A91B41BC81004576E9 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = ../CustomCell.h; sourceTree = "<group>"; };
+		B6D5E9AA1B41BC81004576E9 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = ../CustomCell.m; sourceTree = "<group>"; };
+		B6D5E9AC1B41C6D2004576E9 /* ImageFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFlow.h; sourceTree = "<group>"; };
+		B6D5E9AD1B41C6D2004576E9 /* ImageFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFlow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +92,15 @@
 			children = (
 				B6CB23BD1B3DD99500EF825E /* AppDelegate.h */,
 				B6CB23BE1B3DD99500EF825E /* AppDelegate.m */,
+				B6D5E9A91B41BC81004576E9 /* CustomCell.h */,
+				B6D5E9AA1B41BC81004576E9 /* CustomCell.m */,
 				B6CB23C01B3DD99500EF825E /* ViewController.h */,
 				B6CB23C11B3DD99500EF825E /* ViewController.m */,
+				B6CB23E21B3DDD8000EF825E /* CoverFlowLayOut.h */,
+				B6CB23E31B3DDD8000EF825E /* CoverFlowLayOut.m */,
 				B6CB23C31B3DD99500EF825E /* Main.storyboard */,
+				B6D5E9AC1B41C6D2004576E9 /* ImageFlow.h */,
+				B6D5E9AD1B41C6D2004576E9 /* ImageFlow.m */,
 				B6CB23C61B3DD99500EF825E /* Images.xcassets */,
 				B6CB23C81B3DD99500EF825E /* LaunchScreen.xib */,
 				B6CB23B91B3DD99500EF825E /* Supporting Files */,
@@ -168,6 +183,7 @@
 				TargetAttributes = {
 					B6CB23B51B3DD99500EF825E = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 485M4RZPYP;
 					};
 					B6CB23CE1B3DD99500EF825E = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -219,9 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CB23E41B3DDD8000EF825E /* CoverFlowLayOut.m in Sources */,
+				B6D5E9AE1B41C6D2004576E9 /* ImageFlow.m in Sources */,
 				B6CB23C21B3DD99500EF825E /* ViewController.m in Sources */,
 				B6CB23BF1B3DD99500EF825E /* AppDelegate.m in Sources */,
 				B6CB23BC1B3DD99500EF825E /* main.m in Sources */,
+				B6D5E9AB1B41BC81004576E9 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +366,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "Cover-Flow-Layout/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,9 +379,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "Cover-Flow-Layout/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -416,6 +441,7 @@
 				B6CB23DB1B3DD99500EF825E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6CB23DC1B3DD99500EF825E /* Build configuration list for PBXNativeTarget "Cover-Flow-LayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +450,7 @@
 				B6CB23DE1B3DD99500EF825E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
